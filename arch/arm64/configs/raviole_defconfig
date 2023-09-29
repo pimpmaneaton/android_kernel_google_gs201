@@ -890,6 +890,12 @@ CONFIG_FORCE_FAST_CHARGE=y
 CONFIG_WQ_POWER_EFFICIENT_DEFAULT=y
 
 #
+# Simple LMK
+#
+
+CONFIG_ANDROID_SIMPLE_LMK=y
+
+#
 # ARM errata workarounds via the alternatives framework
 #
 # CONFIG_ARM64_ERRATUM_826319 is not set
