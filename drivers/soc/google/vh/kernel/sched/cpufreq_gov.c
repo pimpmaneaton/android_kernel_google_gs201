@@ -1358,7 +1358,7 @@ int pmu_poll_init(void)
 	struct sched_attr attr = {0};
 
 	attr.sched_policy = SCHED_FIFO;
-	attr.sched_priority = MAX_USER_RT_PRIO / 2;
+	attr.sched_priority = MAX_RT_PRIO - 1;
 
 	init_irq_work(&pmu_irq_work, pmu_poll_irq_work);
 	kthread_init_work(&pmu_work, pmu_limit_work);
